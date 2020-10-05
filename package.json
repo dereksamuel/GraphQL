@@ -1,12 +1,30 @@
 {
-  "name": "graphql",
+  "name": "graph-exam",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
+    "live": "nodemon -e js,graphql index",
+    "start": "SET NODE_ENV=production & node index"
   },
   "keywords": [],
   "author": "Derek Paúl",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@vue/cli": "^4.4.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^15.0.0",
+    "graphql-tools": "^6.0.8",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.5.8"
+  },
+  "devDependencies": {
+    "standard": "^14.3.4"
+  }
 }
